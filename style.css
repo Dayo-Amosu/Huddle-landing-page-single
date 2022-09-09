@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Violet);
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  max-width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 1rem 2rem;
+  height: 90%;
+}
+
+.wrapper .logo img {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.wrapper main .image-section {
+  margin-bottom: 2rem;
+}
+
+.wrapper main .image-section img {
+  width: 100%;
+}
+
+main .text-section {
+  text-align: center;
+  color: white;
+}
+
+.text-section h1 {
+  font-size: 1.4rem;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-section p {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 1rem 4rem;
+  color: var(--Magenta);
+  background-color: white;
+  border-radius: 5rem;
+  box-shadow: 0px 8px 17px -8px rgba(0, 0, 0, 0.8);
+  border: none;
+  margin-bottom: 2rem;
+  transition: all ease-in-out .3s;
+}
+
+button:hover {
+  background-color: var(--Magenta);
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons a {
+  display: inline-flex;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  transition: all ease-in-out .3s;
+}
+
+.icons a:hover {
+  border: 1px solid var(--Magenta);
+  color: var(--Magenta);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: white;
+}
+
+@media (min-width:768px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper{
+    padding: 1rem 0;
+  }
+  .wrapper .logo img {
+    width: 15%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    height: 70vh;
+  }
+
+  .text-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem; 
+    margin-left: 2rem;
+  }
+
+  .text-section h1 {
+    text-align: left;
+    font-size: 2.8rem;
+  }
+
+  .text-section p {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.9;  
+  }
+
+  .icons {
+    justify-content: flex-end;
+  }
+
+  .icons a {
+    margin-left: 1rem;
+  }
+}
